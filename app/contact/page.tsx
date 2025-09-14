@@ -442,21 +442,6 @@ export default function ContactPage() {
             </Card>
 
             <Card className="p-6">
-              <h3 className="font-heading font-bold text-lg mb-3">What areas do you service?</h3>
-              <p className="text-muted-foreground">
-                We provide services within a 15-mile radius of our base location. Contact us to confirm if we service
-                your area.
-              </p>
-            </Card>
-
-            <Card className="p-6">
-              <h3 className="font-heading font-bold text-lg mb-3">Are you insured and bonded?</h3>
-              <p className="text-muted-foreground">
-                Yes, we carry full liability insurance and are bonded for your protection and peace of mind.
-              </p>
-            </Card>
-
-            <Card className="p-6">
               <h3 className="font-heading font-bold text-lg mb-3">
                 What makes you different from other lawn care services?
               </h3>
