@@ -45,30 +45,6 @@ export default function ServicesPage() {
     },
   ]
 
-  const packages = [
-    {
-      title: "Essential Care",
-      type: "Basic",
-      price: "$35/visit",
-      features: ["Weekly/bi-weekly mowing", "Edge trimming", "Debris cleanup", "Basic lawn check"],
-      popular: false,
-    },
-    {
-      title: "Complete Care",
-      type: "Premium",
-      price: "$65/visit",
-      features: ["Everything in Basic", "Weeding service", "Plant watering", "Seasonal cleanup", "Priority scheduling"],
-      popular: true,
-    },
-    {
-      title: "Premium Care",
-      type: "Luxury",
-      price: "$95/visit",
-      features: ["Everything in Complete", "Lawn seeding & aeration", "Snow shoveling", "Monthly consultation", "Same-day response"],
-      popular: false,
-    },
-  ]
-
   const handleQuote = () => {
     router.push("/contact")
   }
@@ -82,7 +58,7 @@ export default function ServicesPage() {
         <div className="absolute inset-0 z-0">
           <img
             src="/hero-lawn.jpg"
-            alt="Lawn care teen entrepreneur"
+            alt="All American Lawn Maintenance"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-primary/80"></div>
@@ -90,10 +66,10 @@ export default function ServicesPage() {
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <Badge className="mb-6 bg-secondary text-secondary-foreground px-4 py-2">Our Services</Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Teen-Powered <span className="text-secondary">Lawn Care</span>
+            All American <span className="text-secondary">Lawn Maintenance</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Simple, reliable, and teen-run lawn services that make your yard look awesome.
+            Teen-run lawn care services that make your yard look amazing—fast, reliable, and friendly.
           </p>
         </div>
       </section>
@@ -140,10 +116,10 @@ export default function ServicesPage() {
       <section className="py-20 px-6 bg-primary text-primary-foreground">
         <div className="max-w-6xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Why Choose Teen-Powered Lawn Care?
+            Why Choose All American Lawn Maintenance?
           </h2>
           <p className="text-xl max-w-3xl mx-auto mb-12">
-            Fast, friendly, and passionate—this is what makes teen entrepreneurs stand out.
+            Fast, friendly, and passionate teen-run lawn care that gets the job done right.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -152,65 +128,23 @@ export default function ServicesPage() {
                 <Star className="w-10 h-10 text-secondary" />
               </div>
               <h3 className="text-xl font-bold mb-4">Quality Work</h3>
-              <p>We take pride in every cut, every edge, every cleanup.</p>
+              <p>We take pride in every cut, edge, and cleanup.</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-secondary" />
               </div>
               <h3 className="text-xl font-bold mb-4">Reliable Service</h3>
-              <p>Show up on time, every time—no exceptions.</p>
+              <p>Show up on time, every time.</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Sprout className="w-10 h-10 text-secondary" />
               </div>
               <h3 className="text-xl font-bold mb-4">Passionate Care</h3>
-              <p>We treat your lawn like it’s our own and have fun doing it.</p>
+              <p>Your lawn is treated like our own—care with energy.</p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Service Packages */}
-      <section className="py-20 px-6 bg-muted">
-        <div className="max-w-6xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Service Packages</h2>
-          <p className="text-xl max-w-3xl mx-auto">
-            Pick the package that fits your lawn and your schedule. All include teen-powered care.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {packages.map((pkg, i) => (
-            <Card key={i} className={`relative overflow-hidden border ${pkg.popular ? "border-secondary" : "border-transparent"}`}>
-              {pkg.popular && (
-                <div className="absolute top-0 left-0 right-0 bg-secondary text-secondary-foreground text-center py-2">
-                  MOST POPULAR
-                </div>
-              )}
-              <CardHeader className="text-center pt-12 pb-8">
-                <Badge className="w-fit mx-auto mb-4">{pkg.type}</Badge>
-                <CardTitle className="text-2xl font-bold">{pkg.title}</CardTitle>
-                <div className="text-3xl font-bold text-primary">
-                  {pkg.price}
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-3">
-                  {pkg.features.map((f, idx) => (
-                    <li key={idx} className="flex items-center gap-3">
-                      <CheckCircle className="w-4 h-4 text-secondary" />
-                      <span className="text-sm">{f}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button className="w-full font-bold mt-6" onClick={handleQuote}>
-                  Choose {pkg.title}
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
         </div>
       </section>
 
@@ -219,11 +153,11 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">Ready to level up your lawn?</h2>
           <p className="text-xl mb-8">
-            Hit us up and see why neighbors trust teen-powered All American Lawn Maintenance.
+            Hit us up and see why neighbors trust All American Lawn Maintenance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-4 font-bold" onClick={handleQuote}>
-              GET YOUR FREE ESTIMATE
+              GET FREE ESTIMATE
             </Button>
             <Button
               size="lg"
