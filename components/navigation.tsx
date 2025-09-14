@@ -53,17 +53,24 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
-            <div className="flex items-center gap-2 text-sm">
+            {/* Phone click-to-call */}
+            <a href="tel:2017712580" className="flex items-center gap-2 text-sm hover:text-secondary transition-colors">
               <Phone className="w-4 h-4" />
               <span className="font-medium">201-771-2580</span>
-            </div>
+            </a>
+
+            {/* Quote button */}
             <Button variant="secondary" size="sm" className="font-medium" onClick={handleGetQuote}>
               GET QUOTE
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden p-2" aria-label="Toggle menu">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden p-2"
+            aria-label="Toggle menu"
+          >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
@@ -82,12 +89,25 @@ export function Navigation() {
                   {item.label}
                 </Link>
               ))}
+
               <div className="pt-4 border-t border-primary-foreground/20">
-                <div className="flex items-center gap-2 text-sm mb-3">
+                {/* Phone number mobile */}
+                <a
+                  href="tel:2017712580"
+                  className="flex items-center gap-2 text-sm mb-3 hover:text-secondary transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
                   <Phone className="w-4 h-4" />
                   <span className="font-medium">201-771-2580</span>
-                </div>
-                <Button variant="secondary" size="sm" className="font-medium" onClick={handleGetQuote}>
+                </a>
+
+                {/* Quote button mobile */}
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  className="font-medium"
+                  onClick={handleGetQuote}
+                >
                   GET QUOTE
                 </Button>
               </div>

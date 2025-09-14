@@ -185,29 +185,147 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-primary text-primary-foreground text-center">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6 text-balance">
-            Ready to transform your lawn?
-          </h2>
-          <p className="text-xl mb-8 text-balance">
-            Get your free estimate today and see why neighbors trust All American Lawn Maintenance.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-4 font-heading font-bold">
-              GET FREE ESTIMATE
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 py-4 font-heading font-bold border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
-            >
-              CALL 201-771-2580
-            </Button>
+      {/* Service Packages */}
+      <section className="py-20 px-6 bg-muted">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">SERVICE PACKAGES</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-balance">
+              Choose the package that best fits your needs and budget. All packages include our quality guarantee.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="relative overflow-hidden">
+              <CardHeader className="text-center pb-8">
+                <Badge className="w-fit mx-auto mb-4">BASIC</Badge>
+                <CardTitle className="text-2xl font-heading font-bold">ESSENTIAL CARE</CardTitle>
+                <div className="text-3xl font-heading font-bold text-primary">
+                  $35<span className="text-base font-normal text-muted-foreground">/visit</span>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Weekly/bi-weekly mowing</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Precision edge trimming</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Debris cleanup</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Basic lawn assessment</span>
+                  </li>
+                </ul>
+                <Button className="w-full font-heading font-bold mt-6">CHOOSE ESSENTIAL</Button>
+              </CardContent>
+            </Card>
+
+            <Card className="relative overflow-hidden border-2 border-secondary">
+              <div className="absolute top-0 left-0 right-0 bg-secondary text-secondary-foreground text-center py-2">
+                <span className="text-sm font-heading font-bold">MOST POPULAR</span>
+              </div>
+              <CardHeader className="text-center pb-8 pt-12">
+                <Badge className="w-fit mx-auto mb-4 bg-secondary text-secondary-foreground">PREMIUM</Badge>
+                <CardTitle className="text-2xl font-heading font-bold">COMPLETE CARE</CardTitle>
+                <div className="text-3xl font-heading font-bold text-primary">
+                  $65<span className="text-base font-normal text-muted-foreground">/visit</span>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Everything in Essential</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Weeding service</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Plant watering</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Seasonal cleanup</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Priority scheduling</span>
+                  </li>
+                </ul>
+                <Button className="w-full font-heading font-bold mt-6 bg-secondary hover:bg-secondary/90">
+                  CHOOSE COMPLETE
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="relative overflow-hidden">
+              <CardHeader className="text-center pb-8">
+                <Badge className="w-fit mx-auto mb-4">LUXURY</Badge>
+                <CardTitle className="text-2xl font-heading font-bold">PREMIUM CARE</CardTitle>
+                <div className="text-3xl font-heading font-bold text-primary">
+                  $95<span className="text-base font-normal text-muted-foreground">/visit</span>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Everything in Complete</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Lawn seeding & aeration</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Snow shoveling (winter)</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Monthly consultation</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-secondary" />
+                    <span className="text-sm">Same-day response</span>
+                  </li>
+                </ul>
+                <Button className="w-full font-heading font-bold mt-6">CHOOSE PREMIUM</Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
+
+{/* CTA Section */}
+<section className="py-20 px-6 bg-white text-black text-center">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6 text-balance">
+      Ready to transform your lawn?
+    </h2>
+    <p className="text-xl mb-8 text-balance">
+      Get your free estimate today and see why neighbors trust All American Lawn Maintenance.
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <Button size="lg" variant="secondary" className="text-lg px-8 py-4 font-heading font-bold">
+        GET FREE ESTIMATE
+      </Button>
+      <Button
+        size="lg"
+        variant="outline"
+        className="text-lg px-8 py-4 font-heading font-bold border-2 border-black text-black hover:bg-black hover:text-white bg-transparent"
+      >
+        CALL 201-771-2580
+      </Button>
     </div>
-  )
-}
+  </div>
+</section>
+
