@@ -1,8 +1,11 @@
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Navigation } from "@/components/navigation"
-import { Scissors, Sprout, Droplets, Calendar, CheckCircle, Star } from "lucide-react"
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Navigation } from "@/components/navigation";
+import { Scissors, Sprout, Droplets, Calendar, CheckCircle, Star } from "lucide-react";
+
 
 export default function ServicesPage() {
   const services = [
