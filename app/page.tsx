@@ -129,7 +129,6 @@ export default function HomePage() {
 </section>
 
 
-      {/* Custom Service Section */}
       <section className="py-20 px-6 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -224,7 +223,7 @@ export default function HomePage() {
             </div>
             <div>
               <img
-                src="/professional-lawn-care-equipment-and-tools-arrange.png"
+                src="/spring-yard-cleanup-and-preparation.png"
                 alt="Professional lawn care equipment"
                 className="w-full h-[600px] object-cover rounded-lg"
               />
