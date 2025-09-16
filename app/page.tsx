@@ -8,9 +8,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section - BAM-style with large image and overlay */}
       <section className="relative h-screen flex items-center justify-center bg-primary text-primary-foreground overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
             src="/professional-lawn-mowing-equipment-on-pristine-gre.png"
@@ -102,38 +100,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonial Section - Dark Background like BAM */}
-      <section className="py-20 px-6 bg-primary text-primary-foreground">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src="/young-entrepreneur-with-lawn-mower-smiling-confide.png"
-                alt="Young entrepreneur with lawn equipment"
-                className="w-full h-[600px] object-cover rounded-lg"
-              />
-            </div>
-            <div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-balance">
-                HELPING HOMEOWNERS ACHIEVE BEAUTIFUL LAWNS
-              </h2>
-              <p className="text-lg leading-relaxed mb-8">
-                "When our previous lawn service became unreliable, I thought we'd have to search around before finding
-                someone who could take proper care of our yard. From the very first visit, I knew this young
-                entrepreneur had all the qualities we were looking for - professional, hard-working, extremely
-                knowledgeable, and reliable. Always willing to go the extra mile, he even researched specific treatments
-                that would most benefit our lawn type. It's clear he loves what he does and it shows in his work."
-              </p>
-              <div className="mb-8">
-                <p className="font-heading font-bold text-lg">- Margaret H.</p>
-              </div>
-              <Button variant="secondary" size="lg" className="font-heading font-bold">
-                SEE OUR TESTIMONIALS
-              </Button>
-            </div>
-          </div>
+<section className="py-20 px-6 bg-primary text-primary-foreground">
+  <div className="max-w-6xl mx-auto">
+    <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="flex justify-center">
+        <img
+          src="/image-removebg-preview.png"
+          alt="Tommy our mascot"
+          className="max-h-[700px] w-auto object-contain"
+        />
+      </div>
+      <div>
+        <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-balance">
+          HELPING HOMEOWNERS ACHIEVE BEAUTIFUL LAWNS
+        </h2>
+        <p className="text-lg leading-relaxed mb-8">
+          "Thomas is detail oriented and reliable. Thomas helped me with seed in the beginning of the season and continues to answer any questions I may have with my lawn. His professionalism is top notch and I enjoy watching Thomas grow his business."
+        </p>
+        <div className="mb-8">
+          <p className="font-heading font-bold text-lg">- Micheal S.</p>
         </div>
-      </section>
+        <Button variant="secondary" size="lg" className="font-heading font-bold">
+          SEE OUR TESTIMONIALS
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Custom Service Section */}
       <section className="py-20 px-6 bg-background">
