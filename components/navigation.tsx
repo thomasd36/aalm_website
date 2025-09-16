@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Phone, Sprout } from "lucide-react"
+import { Menu, X, Phone } from "lucide-react"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -24,16 +24,20 @@ export function Navigation() {
   ]
 
   return (
+    <header className="bg-primary text-primary-foreground sticky top-0 z-50 shadow-lg">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-          <img
-          src="/logo.png"
-          alt="All American Lawn Maintenance Logo"
-          className="w-12 h-12 object-contain"
-          />
-          <div>
-          <h1 className="text-xl font-heading font-bold tracking-tight">ALL AMERICAN</h1>
-          <p className="text-sm opacity-90 -mt-1">LAWN MAINTENANCE</p>
-          </div>
+            <img
+              src="/logo.png"
+              alt="All American Lawn Maintenance Logo"
+              className="w-12 h-12 object-contain"
+            />
+            <div>
+              <h1 className="text-xl font-heading font-bold tracking-tight">ALL AMERICAN</h1>
+              <p className="text-sm opacity-90 -mt-1">LAWN MAINTENANCE</p>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -49,8 +53,12 @@ export function Navigation() {
             ))}
           </nav>
 
+          {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:2017712580" className="flex items-center gap-2 text-sm hover:text-secondary transition-colors">
+            <a
+              href="tel:2017712580"
+              className="flex items-center gap-2 text-sm hover:text-secondary transition-colors"
+            >
               <Phone className="w-4 h-4" />
               <span className="font-medium">201-771-2580</span>
             </a>
@@ -60,6 +68,7 @@ export function Navigation() {
             </Button>
           </div>
 
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2"
@@ -69,6 +78,7 @@ export function Navigation() {
           </button>
         </div>
 
+        {/* Mobile Navigation */}
         {isOpen && (
           <div className="lg:hidden border-t border-primary-foreground/20 py-4">
             <nav className="flex flex-col gap-4">
