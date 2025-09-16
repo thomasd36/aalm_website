@@ -20,7 +20,7 @@ export default function AboutPage() {
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
             Yo, We’re <span className="text-secondary">All American</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -33,7 +33,7 @@ export default function AboutPage() {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
               How It All Started
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
@@ -48,15 +48,15 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Buttons work now */}
+            {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Link href="/contact">
-                <Button size="lg" className="font-heading font-bold">
+                <Button size="lg" className="font-bold">
                   GET A QUOTE
                 </Button>
               </Link>
               <Link href="/gallery">
-                <Button size="lg" variant="outline" className="font-heading font-bold bg-transparent">
+                <Button size="lg" variant="outline" className="font-bold bg-transparent">
                   SEE OUR WORK
                 </Button>
               </Link>
@@ -70,7 +70,7 @@ export default function AboutPage() {
               className="w-full h-[500px] object-cover rounded-lg shadow-xl"
             />
             <div className="absolute -bottom-6 -right-6 bg-secondary text-secondary-foreground p-6 rounded-lg shadow-lg">
-              <div className="text-3xl font-heading font-bold">14</div>
+              <div className="text-3xl font-bold">14</div>
               <div className="text-sm font-medium">YEARS OLD</div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function AboutPage() {
       {/* Values Section */}
       <section className="py-20 px-6 bg-muted">
         <div className="max-w-6xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">WHAT WE’RE ABOUT</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">WHAT WE’RE ABOUT</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             No boring mission statement — just what actually matters to us.
           </p>
@@ -113,7 +113,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-primary text-primary-foreground text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Wanna Join the Squad?
           </h2>
           <p className="text-xl mb-8">
@@ -121,7 +121,7 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-4 font-heading font-bold">
+              <Button size="lg" variant="secondary" className="text-lg px-8 py-4 font-bold">
                 GET FREE ESTIMATE
               </Button>
             </Link>
@@ -129,7 +129,7 @@ export default function AboutPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-lg px-8 py-4 font-heading font-bold border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
+                className="text-lg px-8 py-4 font-bold border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
               >
                 CALL 201-771-2580
               </Button>

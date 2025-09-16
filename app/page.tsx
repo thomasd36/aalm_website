@@ -31,8 +31,8 @@ export default function HomePage() {
             <span className="text-secondary">LAWN MAINTENANCE</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-balance max-w-3xl mx-auto leading-relaxed">
-            Transform your lawn with professional care and attention. Our expert service will help you achieve the
-            beautiful yard you've always wanted.
+            Transform your lawn with our care and attention. Our service will help you achieve the
+            beautiful yard you've been dreaming about.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-4 font-heading font-bold">
@@ -55,10 +55,10 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-secondary/10 text-secondary border-secondary">Professional Lawn Care</Badge>
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-balance">
-              See the difference professional care makes
+              See the difference our services makes
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-balance">
-              Professional lawn care offers focused, efficient service tailored to your yard's needs, ensuring every
+              Our lawn care service offers are focused, efficient service tailored to your yard's needs, ensuring every
               visit maximizes the health and beauty of your lawn.
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-heading font-bold mb-4">REAL RESULTS</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Professional lawn care delivers visible results with trusted expertise. We plan for your yard's specific
+                All American Lawn Maintenance delivers visible results with trusted expertise. We plan for your yard's specific
                 needs, promoting healthy growth and maintaining that perfect green appearance.
               </p>
             </div>
