@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Scissors, Sprout, Droplets, Calendar, CheckCircle, Star } from "lucide-react"
 import { useRouter } from "next/navigation"
@@ -78,7 +77,10 @@ export default function ServicesPage() {
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto grid gap-16">
           {services.map((service, i) => (
-            <div key={i} className={`grid lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}>
+            <div
+              key={i}
+              className={`grid lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
+            >
               <div className={i % 2 === 1 ? "lg:col-start-2" : ""}>
                 <img
                   src={service.image}
@@ -91,7 +93,9 @@ export default function ServicesPage() {
                   <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center">
                     <service.icon className="w-8 h-8 text-secondary" />
                   </div>
-                  <Badge className="bg-secondary/10 text-secondary border-secondary">{service.price}</Badge>
+                  <Badge className="bg-secondary/10 text-secondary border-secondary">
+                    {service.price}
+                  </Badge>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">{service.title}</h2>
                 <p className="text-lg mb-6 leading-relaxed">{service.description}</p>
@@ -151,12 +155,19 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="py-20 px-6 bg-white text-black text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">Ready to level up your lawn?</h2>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+            Ready to level up your lawn?
+          </h2>
           <p className="text-xl mb-8">
             Hit us up and see why our neighbors trust All American Lawn Maintenance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-4 font-bold" onClick={handleQuote}>
+            <Button
+              size="lg"
+              variant="secondary"
+              className="text-lg px-8 py-4 font-bold"
+              onClick={handleQuote}
+            >
               GET FREE ESTIMATE
             </Button>
             <Button
