@@ -16,8 +16,8 @@ export default function ServicesPage() {
       title: "Lawn Mowing & Edging",
       description: "Clean cuts, sharp edges, and a lawn that looks tight every time.",
       features: ["Mow & edge like a pro", "Clean up debris", "Weekly or bi-weekly schedule", "Consistent care"],
-      price: "$35/visit",
-      image: "/lawn-mowing.jpg",
+      price: "Starting at $35/visit",
+      image: "/lawn-edging-and-trimming-around-walkways.png",
     },
     {
       icon: Sprout,
@@ -25,15 +25,15 @@ export default function ServicesPage() {
       description: "Make your grass thicker and greener with proper care.",
       features: ["Aerate soil", "Overseed patchy areas", "Seasonal timing", "Better root growth"],
       price: "Custom quote",
-      image: "/lawn-seeding.jpg",
+      image: "/stunning-front-yard-with-perfect-lawn-and-professi.png",
     },
     {
       icon: Droplets,
       title: "Weeding & Watering",
       description: "Keep your garden beds clean and plants hydrated.",
       features: ["Hand weeding", "Plant watering schedule", "Bed maintenance", "Seasonal plant care"],
-      price: "$25/visit",
-      image: "/weeding-watering.jpg",
+      price: "Starting at $25/visit",
+      image: "/overgrown-backyard-with-tall-weeds-and-debris.png",
     },
     {
       icon: Calendar,
@@ -41,7 +41,7 @@ export default function ServicesPage() {
       description: "Leaves in fall, snow in winter—we got you.",
       features: ["Leaf cleanup", "Snow shoveling", "Spring prep", "Seasonal maintenance"],
       price: "Seasonal packages",
-      image: "/seasonal-lawn.jpg",
+      image: "/seasonal-lawn-lare-services-four-seasons-maintena.png",
     },
   ]
 
@@ -153,7 +153,7 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">Ready to level up your lawn?</h2>
           <p className="text-xl mb-8">
-            Hit us up and see why neighbors trust All American Lawn Maintenance.
+            Hit us up and see why our neighbors trust All American Lawn Maintenance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-4 font-bold" onClick={handleQuote}>
