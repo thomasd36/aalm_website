@@ -30,7 +30,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <img
-              src="/Logo.png"
+              src="/logo-bg-removed.png"
               alt="All American Lawn Maintenance Logo"
               className="w-12 h-12 object-contain"
             />
