@@ -232,7 +232,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-20 px-6 bg-primary text-primary-foreground text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6 text-balance">
@@ -245,7 +244,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-foreground text-background py-12 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
