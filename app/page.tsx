@@ -105,7 +105,7 @@ export default function HomePage() {
     <div className="grid lg:grid-cols-2 gap-12 items-center">
       <div className="flex justify-center">
         <img
-          src="/image-removebg-preview.png"
+          src="/tommy-standing-proud.png"
           alt="Tommy our mascot"
           className="max-h-[700px] w-auto object-contain"
         />
