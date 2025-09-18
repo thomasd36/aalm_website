@@ -342,7 +342,7 @@ export default function ContactPage() {
                       )}
 
                       <p className="text-sm text-muted-foreground text-center">
-                        * Required fields. We respect your privacy and will never share your information.
+                        * = Required fields. We respect your privacy and will never share your information.
                       </p>
                     </div>
                   </form>

@@ -169,7 +169,7 @@ Schedule an estimate: https://calendar.google.com/calendar/u/0?cid=MzYzMDAxNjlhY
       body: JSON.stringify({
         from: "mailer@aalmnj.com",
         to: ["2023aalm@gmail.com"],
-        subject: `🎯 New Quote Request from ${firstName} ${lastName} - ${service}`,
+        subject: `New Quote Request from ${firstName} ${lastName} - ${service}`,
         html: htmlEmailContent,
         text: plainTextContent,
         reply_to: email,
