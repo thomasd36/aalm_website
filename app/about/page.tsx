@@ -38,13 +38,13 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
               <p>
-                Honestly? It started because I wanted some extra cash for sneakers and games. But then neighbors kept asking me to mow their lawns… and suddenly I had a legit business.
+                Honestly? It started because I wanted some extra cash for bike parts and games. But then neighbors kept asking me to mow their lawns… and suddenly I had a legit business.
               </p>
               <p>
                 Every weekend, I’m out there with my gear, blasting music, mowing lawns, and making sure they look 🔥. It’s not just a side hustle anymore — it’s proof that teens can run real businesses.
               </p>
               <p>
-                All American Lawn Maintenance is about more than grass — it’s about grinding, leveling up, and showing that age doesn’t stop you from building something legit.
+                All American Lawn Maintenance is more than just cutting grass. It’s proof that grinding, leveling up, and showing that age doesn’t stop you from building something legit.
               </p>
             </div>
 
