@@ -48,7 +48,6 @@ export async function POST(request: NextRequest) {
         </p>
       </div>
 
-       Customer Info 
       <div style="background-color: #f8fafc; padding: 25px; border-radius: 8px; margin-bottom: 25px;">
         <h3 style="color: #000000; font-size: 18px; font-weight: 600; margin: 0 0 20px 0; border-bottom: 2px solid #06b6d4; padding-bottom: 8px;">
           Customer Information
@@ -77,7 +76,6 @@ export async function POST(request: NextRequest) {
         </table>
       </div>
 
-       Service Details 
       <div style="background-color: #f8fafc; padding: 25px; border-radius: 8px; margin-bottom: 30px;">
         <h3 style="color: #000000; font-size: 18px; font-weight: 600; margin: 0 0 20px 0; border-bottom: 2px solid #06b6d4; padding-bottom: 8px;">
           Service Details
