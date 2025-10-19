@@ -167,7 +167,7 @@ Schedule an estimate: https://calendar.google.com/calendar/u/0?cid=MzYzMDAxNjlhY
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "mailer@mailer.aalmnj.com",
+        from: "from: "All American Lawn Maintenance <info@send.aalmnj.com>,"
         to: ["2023aalm@gmail.com"],
         subject: `New Quote Request from ${firstName} ${lastName} - ${service}`,
         html: htmlEmailContent,
